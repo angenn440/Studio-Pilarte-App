@@ -1,0 +1,18 @@
+📱 Pantalla de Inicio
+ ├─> Clases Reservadas
+ ├─> Consejos para la Clase
+ └─> Clases Compradas
+
+📅 Calendario de Reserva
+ └─> Selección de fecha y hora
+     └─> Confirmar reserva
+
+💳 Pagar Clases
+ └─> Ver paquetes disponibles
+     └─> Método de pago
+         └─> Confirmación
+
+👤 Perfil
+ ├─> Información de la usuaria
+ ├─> Historial de clases
+ └─> Editar datos personales
