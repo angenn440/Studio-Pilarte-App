@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0E12792DCC261E008E5673 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E12782DCC261E008E5673 /* PurchaseManager.swift */; };
+		FB0E127B2DCC2643008E5673 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E127A2DCC2643008E5673 /* ContentView.swift */; };
+		FB0E127D2DCC264B008E5673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0E127C2DCC264B008E5673 /* Assets.xcassets */; };
+		FB0E12822DCC2C9B008E5673 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FB0E12812DCC2C9B008E5673 /* KeychainSwift */; };
+		FB0E12882DCC304D008E5673 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0E12872DCC304D008E5673 /* PersistenceController.swift */; };
+		FB0E128F2DCC39D8008E5673 /* ReservasModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB0E128D2DCC39D8008E5673 /* ReservasModel.xcdatamodeld */; };
+		FB45C0B32DC2F3650093775D /* PilarteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0B22DC2F3650093775D /* PilarteApp.swift */; };
+		FB45C0BA2DC2F3650093775D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB45C0B92DC2F3650093775D /* Preview Assets.xcassets */; };
+		FB45C0C42DC2F3650093775D /* PilarteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0C32DC2F3650093775D /* PilarteTests.swift */; };
+		FB45C0CE2DC2F3650093775D /* PilarteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0CD2DC2F3650093775D /* PilarteUITests.swift */; };
+		FB45C0D02DC2F3650093775D /* PilarteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0CF2DC2F3650093775D /* PilarteUITestsLaunchTests.swift */; };
+		FB45C0ED2DC2F38F0093775D /* PilatesPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0DF2DC2F38F0093775D /* PilatesPlansView.swift */; };
+		FB45C0EE2DC2F38F0093775D /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E02DC2F38F0093775D /* PaymentMethodsView.swift */; };
+		FB45C0EF2DC2F38F0093775D /* ReservaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E12DC2F38F0093775D /* ReservaView.swift */; };
+		FB45C0F12DC2F38F0093775D /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E32DC2F38F0093775D /* Reservation.swift */; };
+		FB45C0F22DC2F38F0093775D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E42DC2F38F0093775D /* LoginView.swift */; };
+		FB45C0F32DC2F38F0093775D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E52DC2F38F0093775D /* ProfileViewModel.swift */; };
+		FB45C0F52DC2F38F0093775D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E72DC2F38F0093775D /* HomeView.swift */; };
+		FB45C0F62DC2F38F0093775D /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E82DC2F38F0093775D /* AccountView.swift */; };
+		FB45C0F72DC2F38F0093775D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0E92DC2F38F0093775D /* ProfileView.swift */; };
+		FB45C1002DC2F3A20093775D /* ReservationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0F82DC2F3A20093775D /* ReservationManager.swift */; };
+		FB45C1012DC2F3A20093775D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0F92DC2F3A20093775D /* DataController.swift */; };
+		FB45C1032DC2F3A20093775D /* ReservasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0FB2DC2F3A20093775D /* ReservasView.swift */; };
+		FB45C1042DC2F3A20093775D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0FC2DC2F3A20093775D /* AuthManager.swift */; };
+		FB45C1052DC2F3A20093775D /* TextSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0FD2DC2F3A20093775D /* TextSettings.swift */; };
+		FB45C1062DC2F3A20093775D /* MyPlansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB45C0FE2DC2F3A20093775D /* MyPlansView.swift */; };
+		FB45C10A2DC2F3DE0093775D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB45C1082DC2F3DE0093775D /* Model.xcdatamodeld */; };
+		FB4CEF1A2DCE86C400E447AC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4CEF192DCE86C400E447AC /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB45C0C02DC2F3650093775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB45C0A72DC2F3650093775D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB45C0AE2DC2F3650093775D;
+			remoteInfo = Pilarte;
+		};
+		FB45C0CA2DC2F3650093775D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB45C0A72DC2F3650093775D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB45C0AE2DC2F3650093775D;
+			remoteInfo = Pilarte;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB0E12782DCC261E008E5673 /* PurchaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		FB0E127A2DCC2643008E5673 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB0E127C2DCC264B008E5673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB0E12872DCC304D008E5673 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		FB0E128E2DCC39D8008E5673 /* ReservasModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReservasModel.xcdatamodel; sourceTree = "<group>"; };
+		FB45C0AF2DC2F3650093775D /* Pilarte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pilarte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB45C0B22DC2F3650093775D /* PilarteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilarteApp.swift; sourceTree = "<group>"; };
+		FB45C0B92DC2F3650093775D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB45C0BF2DC2F3650093775D /* PilarteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilarteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB45C0C32DC2F3650093775D /* PilarteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilarteTests.swift; sourceTree = "<group>"; };
+		FB45C0C92DC2F3650093775D /* PilarteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PilarteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB45C0CD2DC2F3650093775D /* PilarteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilarteUITests.swift; sourceTree = "<group>"; };
+		FB45C0CF2DC2F3650093775D /* PilarteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilarteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB45C0DF2DC2F38F0093775D /* PilatesPlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilatesPlansView.swift; sourceTree = "<group>"; };
+		FB45C0E02DC2F38F0093775D /* PaymentMethodsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodsView.swift; sourceTree = "<group>"; };
+		FB45C0E12DC2F38F0093775D /* ReservaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservaView.swift; sourceTree = "<group>"; };
+		FB45C0E32DC2F38F0093775D /* Reservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		FB45C0E42DC2F38F0093775D /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FB45C0E52DC2F38F0093775D /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FB45C0E72DC2F38F0093775D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FB45C0E82DC2F38F0093775D /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		FB45C0E92DC2F38F0093775D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FB45C0F82DC2F3A20093775D /* ReservationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationManager.swift; sourceTree = "<group>"; };
+		FB45C0F92DC2F3A20093775D /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FB45C0FB2DC2F3A20093775D /* ReservasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservasView.swift; sourceTree = "<group>"; };
+		FB45C0FC2DC2F3A20093775D /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		FB45C0FD2DC2F3A20093775D /* TextSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextSettings.swift; sourceTree = "<group>"; };
+		FB45C0FE2DC2F3A20093775D /* MyPlansView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPlansView.swift; sourceTree = "<group>"; };
+		FB45C1092DC2F3DE0093775D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FB4CEF192DCE86C400E447AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB45C0AC2DC2F3650093775D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0E12822DCC2C9B008E5673 /* KeychainSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0BC2DC2F3650093775D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0C62DC2F3650093775D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB45C0A62DC2F3650093775D = {
+			isa = PBXGroup;
+			children = (
+				FB0E128D2DCC39D8008E5673 /* ReservasModel.xcdatamodeld */,
+				FB45C1082DC2F3DE0093775D /* Model.xcdatamodeld */,
+				FB45C0B12DC2F3650093775D /* Pilarte */,
+				FB45C0C22DC2F3650093775D /* PilarteTests */,
+				FB45C0CC2DC2F3650093775D /* PilarteUITests */,
+				FB45C0B02DC2F3650093775D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB45C0B02DC2F3650093775D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB45C0AF2DC2F3650093775D /* Pilarte.app */,
+				FB45C0BF2DC2F3650093775D /* PilarteTests.xctest */,
+				FB45C0C92DC2F3650093775D /* PilarteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB45C0B12DC2F3650093775D /* Pilarte */ = {
+			isa = PBXGroup;
+			children = (
+				FB45C0B22DC2F3650093775D /* PilarteApp.swift */,
+				FB45C0E82DC2F38F0093775D /* AccountView.swift */,
+				FB0E127C2DCC264B008E5673 /* Assets.xcassets */,
+				FB45C0E72DC2F38F0093775D /* HomeView.swift */,
+				FB45C0E42DC2F38F0093775D /* LoginView.swift */,
+				FB45C0E02DC2F38F0093775D /* PaymentMethodsView.swift */,
+				FB0E127A2DCC2643008E5673 /* ContentView.swift */,
+				FB45C0DF2DC2F38F0093775D /* PilatesPlansView.swift */,
+				FB45C0E92DC2F38F0093775D /* ProfileView.swift */,
+				FB45C0E52DC2F38F0093775D /* ProfileViewModel.swift */,
+				FB45C0E32DC2F38F0093775D /* Reservation.swift */,
+				FB45C0E12DC2F38F0093775D /* ReservaView.swift */,
+				FB45C0B82DC2F3650093775D /* Preview Content */,
+				FB0E12872DCC304D008E5673 /* PersistenceController.swift */,
+			);
+			path = Pilarte;
+			sourceTree = "<group>";
+		};
+		FB45C0B82DC2F3650093775D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FB4CEF192DCE86C400E447AC /* User.swift */,
+				FB45C0FC2DC2F3A20093775D /* AuthManager.swift */,
+				FB45C0F92DC2F3A20093775D /* DataController.swift */,
+				FB0E12782DCC261E008E5673 /* PurchaseManager.swift */,
+				FB45C0FE2DC2F3A20093775D /* MyPlansView.swift */,
+				FB45C0FB2DC2F3A20093775D /* ReservasView.swift */,
+				FB45C0F82DC2F3A20093775D /* ReservationManager.swift */,
+				FB45C0FD2DC2F3A20093775D /* TextSettings.swift */,
+				FB45C0B92DC2F3650093775D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB45C0C22DC2F3650093775D /* PilarteTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB45C0C32DC2F3650093775D /* PilarteTests.swift */,
+			);
+			path = PilarteTests;
+			sourceTree = "<group>";
+		};
+		FB45C0CC2DC2F3650093775D /* PilarteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB45C0CD2DC2F3650093775D /* PilarteUITests.swift */,
+				FB45C0CF2DC2F3650093775D /* PilarteUITestsLaunchTests.swift */,
+			);
+			path = PilarteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB45C0AE2DC2F3650093775D /* Pilarte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB45C0D32DC2F3650093775D /* Build configuration list for PBXNativeTarget "Pilarte" */;
+			buildPhases = (
+				FB45C0AB2DC2F3650093775D /* Sources */,
+				FB45C0AC2DC2F3650093775D /* Frameworks */,
+				FB45C0AD2DC2F3650093775D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pilarte;
+			packageProductDependencies = (
+				FB0E12812DCC2C9B008E5673 /* KeychainSwift */,
+			);
+			productName = Pilarte;
+			productReference = FB45C0AF2DC2F3650093775D /* Pilarte.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB45C0BE2DC2F3650093775D /* PilarteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB45C0D62DC2F3650093775D /* Build configuration list for PBXNativeTarget "PilarteTests" */;
+			buildPhases = (
+				FB45C0BB2DC2F3650093775D /* Sources */,
+				FB45C0BC2DC2F3650093775D /* Frameworks */,
+				FB45C0BD2DC2F3650093775D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB45C0C12DC2F3650093775D /* PBXTargetDependency */,
+			);
+			name = PilarteTests;
+			productName = PilarteTests;
+			productReference = FB45C0BF2DC2F3650093775D /* PilarteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB45C0C82DC2F3650093775D /* PilarteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB45C0D92DC2F3650093775D /* Build configuration list for PBXNativeTarget "PilarteUITests" */;
+			buildPhases = (
+				FB45C0C52DC2F3650093775D /* Sources */,
+				FB45C0C62DC2F3650093775D /* Frameworks */,
+				FB45C0C72DC2F3650093775D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB45C0CB2DC2F3650093775D /* PBXTargetDependency */,
+			);
+			name = PilarteUITests;
+			productName = PilarteUITests;
+			productReference = FB45C0C92DC2F3650093775D /* PilarteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB45C0A72DC2F3650093775D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FB45C0AE2DC2F3650093775D = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FB45C0BE2DC2F3650093775D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FB45C0AE2DC2F3650093775D;
+					};
+					FB45C0C82DC2F3650093775D = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FB45C0AE2DC2F3650093775D;
+					};
+				};
+			};
+			buildConfigurationList = FB45C0AA2DC2F3650093775D /* Build configuration list for PBXProject "Pilarte" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB45C0A62DC2F3650093775D;
+			packageReferences = (
+				FB0E12802DCC2C9B008E5673 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
+			productRefGroup = FB45C0B02DC2F3650093775D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB45C0AE2DC2F3650093775D /* Pilarte */,
+				FB45C0BE2DC2F3650093775D /* PilarteTests */,
+				FB45C0C82DC2F3650093775D /* PilarteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB45C0AD2DC2F3650093775D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB45C0BA2DC2F3650093775D /* Preview Assets.xcassets in Resources */,
+				FB0E127D2DCC264B008E5673 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0BD2DC2F3650093775D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0C72DC2F3650093775D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB45C0AB2DC2F3650093775D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB45C1002DC2F3A20093775D /* ReservationManager.swift in Sources */,
+				FB0E128F2DCC39D8008E5673 /* ReservasModel.xcdatamodeld in Sources */,
+				FB0E12882DCC304D008E5673 /* PersistenceController.swift in Sources */,
+				FB45C10A2DC2F3DE0093775D /* Model.xcdatamodeld in Sources */,
+				FB0E127B2DCC2643008E5673 /* ContentView.swift in Sources */,
+				FB45C0EF2DC2F38F0093775D /* ReservaView.swift in Sources */,
+				FB45C1062DC2F3A20093775D /* MyPlansView.swift in Sources */,
+				FB45C0F52DC2F38F0093775D /* HomeView.swift in Sources */,
+				FB45C0F12DC2F38F0093775D /* Reservation.swift in Sources */,
+				FB0E12792DCC261E008E5673 /* PurchaseManager.swift in Sources */,
+				FB45C0F62DC2F38F0093775D /* AccountView.swift in Sources */,
+				FB45C1012DC2F3A20093775D /* DataController.swift in Sources */,
+				FB45C1042DC2F3A20093775D /* AuthManager.swift in Sources */,
+				FB45C1032DC2F3A20093775D /* ReservasView.swift in Sources */,
+				FB45C0F72DC2F38F0093775D /* ProfileView.swift in Sources */,
+				FB45C0ED2DC2F38F0093775D /* PilatesPlansView.swift in Sources */,
+				FB45C0F32DC2F38F0093775D /* ProfileViewModel.swift in Sources */,
+				FB45C1052DC2F3A20093775D /* TextSettings.swift in Sources */,
+				FB45C0EE2DC2F38F0093775D /* PaymentMethodsView.swift in Sources */,
+				FB4CEF1A2DCE86C400E447AC /* User.swift in Sources */,
+				FB45C0F22DC2F38F0093775D /* LoginView.swift in Sources */,
+				FB45C0B32DC2F3650093775D /* PilarteApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0BB2DC2F3650093775D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB45C0C42DC2F3650093775D /* PilarteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB45C0C52DC2F3650093775D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB45C0D02DC2F3650093775D /* PilarteUITestsLaunchTests.swift in Sources */,
+				FB45C0CE2DC2F3650093775D /* PilarteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB45C0C12DC2F3650093775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB45C0AE2DC2F3650093775D /* Pilarte */;
+			targetProxy = FB45C0C02DC2F3650093775D /* PBXContainerItemProxy */;
+		};
+		FB45C0CB2DC2F3650093775D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB45C0AE2DC2F3650093775D /* Pilarte */;
+			targetProxy = FB45C0CA2DC2F3650093775D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FB45C0D12DC2F3650093775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB45C0D22DC2F3650093775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB45C0D42DC2F3650093775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilarte/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.Pilarte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB45C0D52DC2F3650093775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Pilarte/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.Pilarte;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB45C0D72DC2F3650093775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.PilarteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilarte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilarte";
+			};
+			name = Debug;
+		};
+		FB45C0D82DC2F3650093775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.PilarteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pilarte.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pilarte";
+			};
+			name = Release;
+		};
+		FB45C0DA2DC2F3650093775D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.PilarteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pilarte;
+			};
+			name = Debug;
+		};
+		FB45C0DB2DC2F3650093775D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tecmilenio.PilarteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pilarte;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB45C0AA2DC2F3650093775D /* Build configuration list for PBXProject "Pilarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB45C0D12DC2F3650093775D /* Debug */,
+				FB45C0D22DC2F3650093775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB45C0D32DC2F3650093775D /* Build configuration list for PBXNativeTarget "Pilarte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB45C0D42DC2F3650093775D /* Debug */,
+				FB45C0D52DC2F3650093775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB45C0D62DC2F3650093775D /* Build configuration list for PBXNativeTarget "PilarteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB45C0D72DC2F3650093775D /* Debug */,
+				FB45C0D82DC2F3650093775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB45C0D92DC2F3650093775D /* Build configuration list for PBXNativeTarget "PilarteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB45C0DA2DC2F3650093775D /* Debug */,
+				FB45C0DB2DC2F3650093775D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB0E12802DCC2C9B008E5673 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB0E12812DCC2C9B008E5673 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB0E12802DCC2C9B008E5673 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FB0E128D2DCC39D8008E5673 /* ReservasModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB0E128E2DCC39D8008E5673 /* ReservasModel.xcdatamodel */,
+			);
+			currentVersion = FB0E128E2DCC39D8008E5673 /* ReservasModel.xcdatamodel */;
+			path = ReservasModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FB45C1082DC2F3DE0093775D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FB45C1092DC2F3DE0093775D /* Model.xcdatamodel */,
+			);
+			currentVersion = FB45C1092DC2F3DE0093775D /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FB45C0A72DC2F3650093775D /* Project object */;
+}
